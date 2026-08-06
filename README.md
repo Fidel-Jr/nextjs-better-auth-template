@@ -87,7 +87,7 @@ prisma/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/nextjs-better-auth-template.git
+git clone https://github.com/Fidel-Jr/nextjs-better-auth-template.git
 cd nextjs-better-auth-template
 ```
 
@@ -102,10 +102,10 @@ npm install
 Create a `.env.local` file in the project root:
 
 ```bash
-cp .env.example .env.local   # if present
+cp .env.local   # if present
 ```
 
-If no `.env.example` exists, create `.env.local` manually:
+If no `.env*` exists, create `.env.local` manually:
 
 ```bash
 # Database connection string (from Neon)
@@ -118,14 +118,6 @@ BETTER_AUTH_URL="http://localhost:3000"
 # Google OAuth (optional — only needed for "Login with Google")
 GOOGLE_CLIENT_ID="your-google-client-id"
 GOOGLE_CLIENT_SECRET="your-google-client-secret"
-```
-
-> **Note:** Google OAuth is optional. If you don't want it, leave `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` empty and email & password auth will still work.
-
-Generate a secure auth secret:
-
-```bash
-npx better-auth secret
 ```
 
 ### 4. Set up the database
