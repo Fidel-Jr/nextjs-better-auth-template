@@ -102,12 +102,6 @@ npm install
 Create a `.env.local` file in the project root:
 
 ```bash
-cp .env.local   # if present
-```
-
-If no `.env*` exists, create `.env.local` manually:
-
-```bash
 # Database connection string (from Neon)
 DATABASE_URL="postgresql://USER:PASSWORD@EP.REGION.AWS.NEON.TECH/DBNAME?sslmode=require"
 
