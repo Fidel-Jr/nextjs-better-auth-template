@@ -99,11 +99,11 @@ npm install
 
 ### 3. Set up environment variables
 
-Create a `.env.local` file in the project root:
+Create a `.env` and `.env.local` file in the project root:
 
 ```bash
 # Database connection string (from Neon)
-DATABASE_URL="postgresql://USER:PASSWORD@EP.REGION.AWS.NEON.TECH/DBNAME?sslmode=require"
+DATABASE_URL="postgresql://USER:PASSWORD@EP.REGION.AWS.NEON.TECH/DBNAME?sslmode=require" # Put this inside .env
 
 # Better Auth
 BETTER_AUTH_SECRET="generate-me"
