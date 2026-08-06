@@ -42,5 +42,6 @@ next-env.d.ts
 
 /app/generated/prisma
 
-.agents/skills/
+.agents/
 .claude/
+.windsurf/
