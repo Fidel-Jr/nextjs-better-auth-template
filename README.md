@@ -28,7 +28,6 @@ A minimal, production-ready authentication template built with the modern Next.j
 - **shadcn/ui + Tailwind CSS v4** — accessible, themeable UI components
 - **React Hook Form + Zod** — typed, validated forms for login and signup
 - **Sonner toasts** — clean feedback for auth actions
-- **Type-safe end to end** — TypeScript across the API, components, and database client
 
 ## 🧰 Tech Stack
 
@@ -134,7 +133,7 @@ npx better-auth secret
 Apply the existing migrations to your database:
 
 ```bash
-npx prisma migrate deploy
+npx prisma migrate dev --name init
 ```
 
 Generate the Prisma client (outputs to `app/generated/prisma`):
@@ -149,15 +148,4 @@ npx prisma generate
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Create an account at `/signup`, sign in at `/login`, and land on the protected `/dashboard`.
-
----
-
-## 📄 Scripts
-
-| Command             | Description                     |
-| ------------------- | ------------------------------- |
-| `npm run dev`       | Start the development server    |
-| `npm run build`     | Build the application           |
-| `npm run start`     | Start the production server     |
-| `npm run lint`      | Run ESLint                      |
+Open [http://localhost:3000](http://localhost:3000). Create an account at `/signup` or sign in at `/login`, and land on the protected `/dashboard`.
