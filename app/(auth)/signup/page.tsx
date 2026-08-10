@@ -25,7 +25,7 @@ export default async function LoginPage() {
         </div>
 
         <p className="mt-6 text-center text-xs text-zinc-500">
-          Next.js, Better-Auth and Neon DB
+          Next.js · TypeScript · Better Auth · Neon DB
         </p>
       </div>
     </div>
