@@ -28,7 +28,6 @@ A minimal, production-ready authentication template built with the modern Next.j
 - **shadcn/ui + Tailwind CSS v4** — accessible, themeable UI components
 - **React Hook Form + Zod** — typed, validated forms for login and signup
 - **Sonner toasts** — clean feedback for auth actions
-- **Type-safe end to end** — TypeScript across the API, components, and database client
 
 ## 🧰 Tech Stack
 
@@ -88,7 +87,7 @@ prisma/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/nextjs-better-auth-template.git
+git clone https://github.com/Fidel-Jr/nextjs-better-auth-template.git
 cd nextjs-better-auth-template
 ```
 
@@ -100,17 +99,11 @@ npm install
 
 ### 3. Set up environment variables
 
-Create a `.env.local` file in the project root:
-
-```bash
-cp .env.example .env.local   # if present
-```
-
-If no `.env.example` exists, create `.env.local` manually:
+Create a `.env` and `.env.local` file in the project root:
 
 ```bash
 # Database connection string (from Neon)
-DATABASE_URL="postgresql://USER:PASSWORD@EP.REGION.AWS.NEON.TECH/DBNAME?sslmode=require"
+DATABASE_URL="postgresql://USER:PASSWORD@EP.REGION.AWS.NEON.TECH/DBNAME?sslmode=require" # Put this inside .env
 
 # Better Auth
 BETTER_AUTH_SECRET="generate-me"
@@ -121,20 +114,12 @@ GOOGLE_CLIENT_ID="your-google-client-id"
 GOOGLE_CLIENT_SECRET="your-google-client-secret"
 ```
 
-> **Note:** Google OAuth is optional. If you don't want it, leave `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` empty and email & password auth will still work.
-
-Generate a secure auth secret:
-
-```bash
-npx better-auth secret
-```
-
 ### 4. Set up the database
 
 Apply the existing migrations to your database:
 
 ```bash
-npx prisma migrate deploy
+npx prisma migrate dev --name init
 ```
 
 Generate the Prisma client (outputs to `app/generated/prisma`):
@@ -149,15 +134,4 @@ npx prisma generate
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Create an account at `/signup`, sign in at `/login`, and land on the protected `/dashboard`.
-
----
-
-## 📄 Scripts
-
-| Command             | Description                     |
-| ------------------- | ------------------------------- |
-| `npm run dev`       | Start the development server    |
-| `npm run build`     | Build the application           |
-| `npm run start`     | Start the production server     |
-| `npm run lint`      | Run ESLint                      |
+Open [http://localhost:3000](http://localhost:3000). Create an account at `/signup` or sign in at `/login`, and land on the protected `/dashboard`.
