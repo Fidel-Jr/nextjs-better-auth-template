@@ -135,3 +135,20 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000). Create an account at `/signup` or sign in at `/login`, and land on the protected `/dashboard`.
+
+
+## 💻 Preview
+
+<img width="1918" height="1030" alt="image" src="https://github.com/user-attachments/assets/4752a962-cc2b-4923-86f2-23760a4419d8" />
+
+##
+
+<img width="1919" height="1028" alt="image" src="https://github.com/user-attachments/assets/4154b878-de14-4b5a-883c-5ed98cad757c" />
+
+##
+
+<img width="1919" height="1028" alt="image" src="https://github.com/user-attachments/assets/b79fd529-741a-4189-bd58-34b0d382bb58" />
+
+##
+
+<img width="1918" height="1028" alt="image" src="https://github.com/user-attachments/assets/f756bff5-4bba-4d9c-92c9-8617089da5ad" />
